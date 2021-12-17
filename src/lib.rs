@@ -1,2 +1,2 @@
 pub mod consts;
-pub mod wsocks;
+pub mod rsock;
