@@ -1,7 +1,7 @@
 // Redefine a SOCKET Type for c++ fanciness, totally useless
 pub type SOCKET = usize;
 
-extern "system"
+extern "win64"
 {
     fn socket(addr_family: usize, sck_type: usize, protocol: usize) -> usize; 
     fn WSAStartup(wVersionRequested: u16, lpWSAData: *const usize) -> usize;
